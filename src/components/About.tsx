@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Shield, Award, FileText } from 'lucide-react';
+import { Building2, ShieldCheck, Laptop } from 'lucide-react';
 
 // Register ScrollTrigger with GSAP
 gsap.registerPlugin(ScrollTrigger);
@@ -53,17 +53,17 @@ const About = () => {
     {
       title: "Authorized CSC Centre",
       description: "As an authorized Common Service Centre (CSC), we offer a wide range of government-related services including ID updates, document applications, utility payments, and citizen welfare schemes. With a focus on transparency and efficiency, we ensure that every service is delivered in compliance with official standards, making government access simple and trustworthy for all.",
-      icon: Shield
+      icon: Building2
     },
     {
       title: "NIC – National Insurance Company Certified Agent",
       description: "With over 15 years of experience as a certified agent of National Insurance Company, we provide trusted guidance on selecting the right insurance coverage. From vehicles and health to agriculture and businesses, we help you safeguard what matters most with tailored, affordable policies backed by expert knowledge and personal care.",
-      icon: Award
+      icon: ShieldCheck
     },
     {
       title: "Digital Services & Support",
       description: "At Janpero Digital Shield, we deliver reliable digital solutions under one roof. Whether it's handling tax filings, downloading official certificates, or managing online registrations, our center simplifies complex processes for individuals and businesses alike, ensuring smooth, secure, and timely service every step of the way.",
-      icon: FileText
+      icon: Laptop
     }
   ];
 

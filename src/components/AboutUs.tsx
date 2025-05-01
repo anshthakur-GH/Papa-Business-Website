@@ -25,9 +25,9 @@ const AboutUs: React.FC = () => {
     <section className="py-16 bg-dark-secondary">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Our Services</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">About Us</h2>
           <p className="text-dark-muted max-w-3xl mx-auto">
-            Comprehensive solutions for all your insurance and government service needs.
+            Your trusted partner for insurance and government services
           </p>
         </div>
 
