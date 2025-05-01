@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { Menu, X } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { language } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,13 +29,26 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
-  const navLinks = [
-    { name: 'Home', to: 'home' },
-    { name: 'About', to: 'about' },
-    { name: 'Services', to: 'services' },
-    { name: 'Claims Process', to: 'claims' },
-    { name: 'Contact', to: 'contact' },
-  ];
+  const navLinks = {
+    hi: [
+      { name: 'मुख्य पृष्ठ', to: 'home' },
+      { name: 'हमारे बारे में', to: 'about' },
+      { name: 'सेवाएं', to: 'services' },
+      { name: 'क्लेम प्रक्रिया', to: 'claims' },
+      { name: 'संपर्क करें', to: 'contact' },
+    ],
+    en: [
+      { name: 'Home', to: 'home' },
+      { name: 'About Us', to: 'about' },
+      { name: 'Services', to: 'services' },
+      { name: 'Claims Process', to: 'claims' },
+      { name: 'Contact', to: 'contact' },
+    ]
+  };
+
+  const currentLinks = navLinks[language];
+  const brandName = language === 'hi' ? 'संजय सिंह' : 'Sanjay Singh';
+  const quoteText = language === 'hi' ? 'कोट प्राप्त करें' : 'Get a Quote';
 
   return (
     <nav 
@@ -54,13 +69,13 @@ const Navbar = () => {
             className="flex items-center cursor-pointer"
           >
             <div className="font-bold text-xl md:text-2xl">
-              <span className="text-white">Sanjay Singh</span>
+              <span className="text-white">{brandName}</span>
             </div>
           </Link>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-2">
-            {navLinks.map((link) => (
+            {currentLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.to}
@@ -76,7 +91,7 @@ const Navbar = () => {
               </Link>
             ))}
             <a href="tel:9721883299" className="btn-primary ml-4">
-              Get a Quote
+              {quoteText}
             </a>
           </div>
           
@@ -102,7 +117,7 @@ const Navbar = () => {
         }`}
       >
         <div className="flex flex-col items-center justify-center h-full">
-          {navLinks.map((link) => (
+          {currentLinks.map((link) => (
             <Link
               key={link.name}
               to={link.to}
@@ -118,7 +133,7 @@ const Navbar = () => {
             </Link>
           ))}
           <a href="tel:9721883299" className="btn-primary mt-6">
-            Get a Quote
+            {quoteText}
           </a>
         </div>
       </div>

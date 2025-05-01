@@ -17,12 +17,12 @@ const Footer = () => {
               className="cursor-pointer"
             >
               <h2 className="text-2xl font-bold mb-4">
-                <span className="text-white">Sanjay Singh</span>
-                <span className="text-dark-gold"> CSC Centre and Insurance</span>
+                <span className="text-white">संजय सिंह</span>
+                <span className="text-dark-gold"> सीएससी केंद्र और बीमा</span>
               </h2>
             </Link>
             <p className="text-dark-muted mb-6 max-w-md">
-              With over 15 years of experience, we provide expert insurance solutions and comprehensive government services under one roof. Your trusted partner for protection and documentation needs.
+              15 वर्षों से अधिक के अनुभव के साथ, हम एक ही छत के नीचे विशेषज्ञ बीमा समाधान और व्यापक सरकारी सेवाएं प्रदान करते हैं। सुरक्षा और दस्तावेज़ीकरण आवश्यकताओं के लिए आपका विश्वसनीय साथी।
             </p>
             <div className="flex space-x-4">
               <a
@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-bold mb-4">त्वरित लिंक</h3>
             <ul className="space-y-3">
               <li>
                 <Link
@@ -67,7 +67,7 @@ const Footer = () => {
                   duration={500}
                   className="text-dark-muted hover:text-dark-blue transition-colors cursor-pointer"
                 >
-                  Home
+                  मुख्य पृष्ठ
                 </Link>
               </li>
               <li>
@@ -79,7 +79,7 @@ const Footer = () => {
                   duration={500}
                   className="text-dark-muted hover:text-dark-blue transition-colors cursor-pointer"
                 >
-                  About Us
+                  हमारे बारे में
                 </Link>
               </li>
               <li>
@@ -91,7 +91,7 @@ const Footer = () => {
                   duration={500}
                   className="text-dark-muted hover:text-dark-blue transition-colors cursor-pointer"
                 >
-                  Services
+                  सेवाएं
                 </Link>
               </li>
               <li>
@@ -103,7 +103,7 @@ const Footer = () => {
                   duration={500}
                   className="text-dark-muted hover:text-dark-blue transition-colors cursor-pointer"
                 >
-                  Claims Process
+                  क्लेम प्रक्रिया
                 </Link>
               </li>
               <li>
@@ -115,14 +115,14 @@ const Footer = () => {
                   duration={500}
                   className="text-dark-muted hover:text-dark-blue transition-colors cursor-pointer"
                 >
-                  Contact
+                  संपर्क करें
                 </Link>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4">Contact Info</h3>
+            <h3 className="text-lg font-bold mb-4">संपर्क जानकारी</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Phone className="text-dark-blue w-5 h-5 mr-3 flex-shrink-0" />
@@ -139,7 +139,7 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="text-dark-blue w-5 h-5 mr-3 flex-shrink-0" />
                 <div>
-                  <p className="text-dark-muted">JAN SEVA KENDRA PIRO SARAIYA & VEHICLE INSURANCE #Sanjay Singh,<br />Piro saraiya, Uttar Pradesh 227814</p>
+                  <p className="text-dark-muted">जन सेवा केंद्र पीरो सरैया और वाहन बीमा #संजय सिंह,<br />पीरो सरैया, उत्तर प्रदेश 227814</p>
                 </div>
               </li>
             </ul>
@@ -148,11 +148,11 @@ const Footer = () => {
         
         <div className="border-t border-gray-700 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-dark-muted text-sm">
-            © {new Date().getFullYear()} Sanjay Singh CSC Centre and Insurance. All rights reserved.
+            © {new Date().getFullYear()} संजय सिंह सीएससी केंद्र और बीमा। सर्वाधिकार सुरक्षित।
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0 text-sm text-dark-muted">
-            <a href="#" className="hover:text-dark-blue">Privacy Policy</a>
-            <a href="#" className="hover:text-dark-blue">Terms of Service</a>
+            <a href="#" className="hover:text-dark-blue">गोपनीयता नीति</a>
+            <a href="#" className="hover:text-dark-blue">सेवा की शर्तें</a>
           </div>
         </div>
       </div>

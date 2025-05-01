@@ -7,40 +7,40 @@ const CSCServices = () => {
   const cscServices = [
     {
       icon: <FileText className="w-10 h-10 text-dark-gold" />,
-      title: "Government Certificates",
-      description: "Birth/death certificates, income, caste, domicile & other essential documentation.",
+      title: "सरकारी प्रमाणपत्र",
+      description: "जन्म/मृत्यु प्रमाणपत्र, आय, जाति, डोमिसाइल और अन्य आवश्यक दस्तावेज।",
       items: [
-        "Birth Certificate", "Death Certificate", "Marriage Certificate", "Divorce Certificate", 
-        "Domicile Certificate", "Nationality Certificate", "Caste Certificate", "Tribe Certificate", 
-        "Income Certificate", "Employment Certificate", "Unemployment Certificate", 
-        "Economically Weaker Section (EWS) Certificate", "Below Poverty Line (BPL) Certificate", 
-        "Non-Creamy Layer Certificate", "Disability Certificate", "Medical Fitness Certificate", 
-        "PF certificate", "Succession Certificate"
+        "जन्म प्रमाणपत्र", "मृत्यु प्रमाणपत्र", "विवाह प्रमाणपत्र", "तलाक प्रमाणपत्र", 
+        "डोमिसाइल प्रमाणपत्र", "राष्ट्रीयता प्रमाणपत्र", "जाति प्रमाणपत्र", "जनजाति प्रमाणपत्र", 
+        "आय प्रमाणपत्र", "रोजगार प्रमाणपत्र", "बेरोजगारी प्रमाणपत्र", 
+        "आर्थिक रूप से कमजोर वर्ग (ईडब्ल्यूएस) प्रमाणपत्र", "गरीबी रेखा से नीचे (बीपीएल) प्रमाणपत्र", 
+        "नॉन-क्रीमी लेयर प्रमाणपत्र", "विकलांगता प्रमाणपत्र", "चिकित्सा फिटनेस प्रमाणपत्र", 
+        "पीएफ प्रमाणपत्र", "उत्तराधिकार प्रमाणपत्र"
       ]
     },
     {
       icon: <Users className="w-10 h-10 text-dark-gold" />,
-      title: "Pension & Welfare Services",
-      description: "Assistance with pension applications, social welfare schemes & government benefits.",
+      title: "पेंशन और कल्याण सेवाएं",
+      description: "पेंशन आवेदन, सामाजिक कल्याण योजनाओं और सरकारी लाभों में सहायता।",
       items: [
-        "Vridha Pension Certificate", "Viklang Pension Certificate", "Vidhwa Pension Certificate", 
-        "Kisan Pension Certificate", "Atal Pension Yojana Certificate", "NSAP Beneficiary Certificate", 
-        "IGNOAPS Certificate", "IGNWPS Certificate", "IGNDPS Certificate", "PM-SYM Certificate"
+        "वृद्ध पेंशन प्रमाणपत्र", "विकलांग पेंशन प्रमाणपत्र", "विधवा पेंशन प्रमाणपत्र", 
+        "किसान पेंशन प्रमाणपत्र", "अटल पेंशन योजना प्रमाणपत्र", "एनएसएपी लाभार्थी प्रमाणपत्र", 
+        "आईजीएनओएपीएस प्रमाणपत्र", "आईजीएनडब्ल्यूपीएस प्रमाणपत्र", "आईजीएनडीपीएस प्रमाणपत्र", "पीएम-एसवाईएम प्रमाणपत्र"
       ]
     },
     {
       icon: <List className="w-10 h-10 text-dark-gold" />,
-      title: "Digital Services",
-      description: "Aadhaar updates, PAN card services, bill payments & online form submissions.",
+      title: "डिजिटल सेवाएं",
+      description: "आधार अपडेट, पैन कार्ड सेवाएं, बिल भुगतान और ऑनलाइन फॉर्म जमा करना।",
       items: [
-        "PAN Card", "Bill Payment", "Recharges", "Aadhar Updates", "Plastic Aadhar", 
-        "Government Forms Filling", "Passport", "Driving License", "Voter ID", 
-        "Ration Card Application", "DigiLocker Access", "e-SHRAM Card", "Ayushman Bharat Card", 
-        "FASTag Services", "Mobile Number Linking", "UAN (EPFO) Services", "GST Registration", 
-        "COWIN Certificate Download", "Property Tax Payment", "Water/Electricity Connection Application", 
-        "Land Record Services (Bhulekh)", "Income Tax Filing", "Birth/Death Certificate Download", 
-        "Scholarship Application Submission", "School/College Admission Form Filling", 
-        "Employment Exchange Registration"
+        "पैन कार्ड", "बिल भुगतान", "रिचार्ज", "आधार अपडेट", "प्लास्टिक आधार", 
+        "सरकारी फॉर्म भरना", "पासपोर्ट", "ड्राइविंग लाइसेंस", "मतदाता पहचान पत्र", 
+        "राशन कार्ड आवेदन", "डिजिलॉकर एक्सेस", "ई-श्रम कार्ड", "आयुष्मान भारत कार्ड", 
+        "फास्टैग सेवाएं", "मोबाइल नंबर लिंकिंग", "यूएएन (ईपीएफओ) सेवाएं", "जीएसटी पंजीकरण", 
+        "कोविन प्रमाणपत्र डाउनलोड", "संपत्ति कर भुगतान", "पानी/बिजली कनेक्शन आवेदन", 
+        "भूमि रिकॉर्ड सेवाएं (भूलेख)", "आयकर फाइलिंग", "जन्म/मृत्यु प्रमाणपत्र डाउनलोड", 
+        "छात्रवृत्ति आवेदन जमा करना", "स्कूल/कॉलेज प्रवेश फॉर्म भरना", 
+        "रोजगार एक्सचेंज पंजीकरण"
       ]
     },
   ];
@@ -56,9 +56,9 @@ const CSCServices = () => {
     <div id="csc-services" className="py-16">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">CSC Services</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">सीएससी सेवाएं</h2>
           <p className="text-dark-muted max-w-3xl mx-auto">
-            Our Common Service Centre offers comprehensive government documentation services to make essential paperwork hassle-free.
+            हमारा कॉमन सर्विस सेंटर आवश्यक कागजी कार्रवाई को आसान बनाने के लिए व्यापक सरकारी दस्तावेजीकरण सेवाएं प्रदान करता है।
           </p>
         </div>
 
@@ -87,7 +87,7 @@ const CSCServices = () => {
                     onClick={() => toggleService(index)}
                     className="mt-4 text-dark-gold hover:text-dark-gold/80 transition-colors"
                   >
-                    {expandedServices[index] ? 'Show Less' : 'View All Services'}
+                    {expandedServices[index] ? 'कम दिखाएं' : 'सभी सेवाएं देखें'}
                   </button>
                 )}
               </div>

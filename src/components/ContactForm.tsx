@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -32,8 +31,8 @@ const ContactForm = () => {
     setTimeout(() => {
       console.log('Form submitted:', formData);
       toast({
-        title: 'Message Sent!',
-        description: 'We will get back to you as soon as possible.',
+        title: 'संदेश भेज दिया गया!',
+        description: 'हम जल्द से जल्द आपसे संपर्क करेंगे।',
       });
       
       // Reset form
@@ -53,14 +52,14 @@ const ContactForm = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-dark-muted mb-1">
-            Your Name
+            आपका नाम
           </label>
           <Input
             id="name"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="John Doe"
+            placeholder="अपना नाम लिखें"
             required
             className="bg-dark-secondary border-dark-border text-dark-text"
           />
@@ -68,7 +67,7 @@ const ContactForm = () => {
         
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-dark-muted mb-1">
-            Email Address
+            ईमेल पता
           </label>
           <Input
             id="email"
@@ -76,7 +75,7 @@ const ContactForm = () => {
             type="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="john@example.com"
+            placeholder="example@email.com"
             required
             className="bg-dark-secondary border-dark-border text-dark-text"
           />
@@ -86,7 +85,7 @@ const ContactForm = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <label htmlFor="phone" className="block text-sm font-medium text-dark-muted mb-1">
-            Phone Number
+            फोन नंबर
           </label>
           <Input
             id="phone"
@@ -101,14 +100,14 @@ const ContactForm = () => {
         
         <div>
           <label htmlFor="subject" className="block text-sm font-medium text-dark-muted mb-1">
-            Subject
+            विषय
           </label>
           <Input
             id="subject"
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            placeholder="Insurance Inquiry"
+            placeholder="बीमा पूछताछ"
             required
             className="bg-dark-secondary border-dark-border text-dark-text"
           />
@@ -117,14 +116,14 @@ const ContactForm = () => {
       
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-dark-muted mb-1">
-          Message
+          संदेश
         </label>
         <Textarea
           id="message"
           name="message"
           value={formData.message}
           onChange={handleChange}
-          placeholder="How can we help you?"
+          placeholder="हम आपकी कैसे मदद कर सकते हैं?"
           rows={5}
           required
           className="bg-dark-secondary border-dark-border text-dark-text resize-none"
@@ -137,7 +136,7 @@ const ContactForm = () => {
           disabled={loading}
           className="bg-dark-blue hover:bg-blue-600 text-white"
         >
-          {loading ? 'Sending...' : 'Send Message'}
+          {loading ? 'भेज रहे हैं...' : 'संदेश भेजें'}
         </Button>
       </div>
     </form>

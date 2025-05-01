@@ -7,30 +7,30 @@ const InsuranceServices = () => {
   const insuranceServices = [
     {
       icon: <Car className="w-10 h-10 text-dark-gold" />,
-      title: "Auto Insurance",
-      description: "Comprehensive and third-party vehicle insurance with competitive premiums and fast claim settlement.",
+      title: "वाहन बीमा",
+      description: "व्यापक और थर्ड पार्टी वाहन बीमा प्रतिस्पर्धी प्रीमियम और तेज क्लेम सेटलमेंट के साथ।",
       items: [
-        "Two-Wheeler (Bike/Scooter)", "Private Car", "Commercial Car (Taxi/Cab)", 
-        "Auto Rickshaw", "E-Rickshaw", "Bus (Private/Commercial)", 
-        "Truck (Light/Heavy)", "Tractor", "School Van", 
-        "Ambulance", "Delivery Van", "Pickup Van", 
-        "Tanker", "Crane", "Trailer", 
-        "Dumper", "Fire Brigade Vehicle", "Police Vehicle", 
-        "Garbage Collection Van", "Construction Vehicles (e.g., JCB, Loader)"
+        "दोपहिया वाहन (बाइक/स्कूटर)", "निजी कार", "व्यावसायिक कार (टैक्सी/कैब)", 
+        "ऑटो रिक्शा", "ई-रिक्शा", "बस (निजी/व्यावसायिक)", 
+        "ट्रक (हल्का/भारी)", "ट्रैक्टर", "स्कूल वैन", 
+        "एम्बुलेंस", "डिलीवरी वैन", "पिकअप वैन", 
+        "टैंकर", "क्रेन", "ट्रेलर", 
+        "डंपर", "फायर ब्रिगेड वाहन", "पुलिस वाहन", 
+        "कचरा संग्रह वैन", "निर्माण वाहन (जैसे, जेसीबी, लोडर)"
       ]
     },
     {
       icon: <Shield className="w-10 h-10 text-dark-gold" />,
-      title: "Health Insurance",
-      description: "Individual and family health coverage with cashless hospitalization and extensive network support.",
+      title: "स्वास्थ्य बीमा",
+      description: "व्यक्तिगत और परिवार स्वास्थ्य कवरेज कैशलेस अस्पताल में भर्ती और व्यापक नेटवर्क सहायता के साथ।",
       items: [
-        "Individual Health Insurance", "Family Floater Health Insurance", "Senior Citizen Health Insurance", 
-        "Critical Illness Insurance", "Maternity Health Insurance", "Group Health Insurance (Corporate)", 
-        "Personal Accident Insurance", "Top-Up Health Insurance", "Super Top-Up Health Insurance", 
-        "Disease-Specific Insurance (e.g., Cancer, Diabetes)", "AYUSHMAN Treatment Coverage", 
-        "Pre-Existing Disease Coverage Plans", "Daily Hospital Cash Plans", "OPD (Outpatient Department) Cover Plans", 
-        "Hospitalization Insurance", "Preventive Health Check-up Plans", "Child Health Insurance", 
-        "Women's Health Insurance Plans"
+        "व्यक्तिगत स्वास्थ्य बीमा", "परिवार फ्लोटर स्वास्थ्य बीमा", "वरिष्ठ नागरिक स्वास्थ्य बीमा", 
+        "गंभीर बीमारी बीमा", "मातृत्व स्वास्थ्य बीमा", "समूह स्वास्थ्य बीमा (कॉर्पोरेट)", 
+        "व्यक्तिगत दुर्घटना बीमा", "टॉप-अप स्वास्थ्य बीमा", "सुपर टॉप-अप स्वास्थ्य बीमा", 
+        "बीमारी-विशिष्ट बीमा (जैसे, कैंसर, मधुमेह)", "आयुष्मान उपचार कवरेज", 
+        "पूर्व-मौजूदा बीमारी कवरेज योजनाएं", "दैनिक अस्पताल नकद योजनाएं", "ओपीडी (आउट पेशेंट विभाग) कवर योजनाएं", 
+        "अस्पताल में भर्ती बीमा", "निवारक स्वास्थ्य जांच योजनाएं", "बाल स्वास्थ्य बीमा", 
+        "महिला स्वास्थ्य बीमा योजनाएं"
       ]
     },
   ];
@@ -46,9 +46,9 @@ const InsuranceServices = () => {
     <div id="insurance-services" className="py-16 bg-dark-secondary">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Insurance Services</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">बीमा सेवाएं</h2>
           <p className="text-dark-muted max-w-3xl mx-auto">
-            We offer a wide range of insurance products to protect what matters most to you, with expert guidance and support.
+            हम आपके लिए महत्वपूर्ण चीजों की सुरक्षा के लिए विशेषज्ञ मार्गदर्शन और सहायता के साथ बीमा उत्पादों की एक विस्तृत श्रृंखला प्रदान करते हैं।
           </p>
         </div>
 
@@ -77,7 +77,7 @@ const InsuranceServices = () => {
                     onClick={() => toggleService(index)}
                     className="mt-4 text-dark-gold hover:text-dark-gold/80 transition-colors"
                   >
-                    {expandedServices[index] ? 'Show Less' : 'View All Services'}
+                    {expandedServices[index] ? 'कम दिखाएं' : 'सभी सेवाएं देखें'}
                   </button>
                 )}
               </div>

@@ -6,7 +6,6 @@ import Services from '../components/Services';
 import Contact from '../components/Contact';
 import MapSection from '../components/MapSection';
 import Footer from '../components/Footer';
-import LiveChat from '../components/LiveChat';
 
 const Index = () => {
   useEffect(() => {
@@ -26,7 +25,6 @@ const Index = () => {
         <MapSection />
       </main>
       <Footer />
-      <LiveChat />
     </div>
   );
 };
